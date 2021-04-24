@@ -26,7 +26,7 @@ struct ContentView: View {
         
         let formatter = DateFormatter()
         formatter.timeStyle = .short
-        let dateString = formatter.string(from: Date())
+        _ = formatter.string(from: Date())
         
         return DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
             .labelsHidden()
